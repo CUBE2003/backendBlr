@@ -15,7 +15,4 @@ router.delete('/:id', jobController.deleteJob);
 
 
 
-
-
-
 module.exports=router;
