@@ -19,6 +19,12 @@ admin.initializeApp({
     
 });
 
+if (admin.apps.length === 0) {
+    console.error('Firebase is not connected. Check your Firebase initialization.');
+  } else {
+    console.log('Firebase is connected!');
+  }
+
 mongoose.connect(process.env.MONGO_URL)
     .then(()=> console.log('connect to v2'))
     .catch((err)=> console.log(err));
