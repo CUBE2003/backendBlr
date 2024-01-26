@@ -18,7 +18,7 @@ const {verifyToken, verifyAndAuth, verifyAgent}=require('../middleware/verifyTok
     // router.put('/',verifyAndAuth,userController.updateuser);
      router.post('/agents',verifyAndAuth,userController.addAgent);
      router.put('/agents/:id',verifyAndAuth,userController.updateAgent);
-     router.get('/agents',verifyAndAuth,userController.getAgent);
+     router.get('/agents/:uid',verifyAndAuth,userController.getAgent);
      router.get('/agents',verifyAndAuth,userController.getAgents);
      router.delete('/agents/:uid',verifyAndAuth,userController.updateAgent);
 module, exports = router;
