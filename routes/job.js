@@ -13,6 +13,7 @@ router.put('/:id', jobController.updateJob);
 
 router.delete('/:id', jobController.deleteJob);
 
+// router.get('/agent:uid',jobController.getAgentJobs);
 
 
 module.exports=router;
