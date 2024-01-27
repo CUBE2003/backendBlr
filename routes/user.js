@@ -7,7 +7,7 @@ const {verifyToken, verifyAndAuth, verifyAgent}=require('../middleware/verifyTok
      // DELETE user ROUTE
      router. delete( '/:id', verifyAndAuth, userController.deleteUser);
     // GET userS ROUTE
-     router.put('/', verityAndAuth, userController.updateuser)
+     router.put('/', verityAndAuth, userController.updateUser)
 
     //  router.put('/',verifyAndAuth,userController.updateuser);
     //  router.post('/skills',verifyAndAuth,userController.updateuser);
